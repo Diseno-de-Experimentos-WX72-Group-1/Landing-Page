@@ -1,1 +1,236 @@
-# Landing-Page
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pet&Care - Tu solución integral para el cuidado de mascotas">
+    <title>Pet&Care - Página Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header img {
+            width: 100px; 
+            height: auto; 
+            position: absolute;
+            top: 15px; 
+            right: 15px; 
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .hero h2 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #007BFF;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #555;
+            margin: 10px 0;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+            gap: 20px;
+        }
+        .feature {
+            flex: 1;
+            min-width: 280px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .feature img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .feature h3 {
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .feature a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            border: 1px solid #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .feature a:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+        .faq-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .faq-section h2 {
+            font-size: 2em;
+            color: #007BFF;
+            margin-bottom: 15px;
+        }
+        .faq {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .faq:last-child {
+            border-bottom: none;
+        }
+        .faq:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .faq h3 {
+            font-size: 1.2em;
+            color: #007BFF;
+            margin: 0;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .faq h3:hover {
+            color: #0056b3;
+        }
+        .faq p {
+            margin: 10px 0;
+            color: #fff;
+            background-color: #007BFF; 
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq.active p {
+            display: block;
+            max-height: 1000px; 
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Pet&Care</h1>
+            <img src="img/petcare.jpeg" alt="Logo Pet&Care">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>La solución integral para el cuidado de tus mascotas</h2>
+            <p>Gestiona citas veterinarias, recibe recordatorios automáticos y accede a servicios a domicilio con Pet&Care.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Programación de Citas</h3>
+                <img src="img/imagen1.jpg" alt="Programación de Citas">
+                <p>Programa fácilmente las citas con tu veterinario y recibe recordatorios automáticos.</p>
+                <a href="citas.html">Programar Cita</a>
+            </div>
+            <div class="feature">
+                <h3>Servicios a Domicilio</h3>
+                <img src="img/imagen2.jpg" alt="Servicios a Domicilio">
+                <p>Solicita servicios veterinarios a domicilio para la comodidad de tu mascota.</p>
+                <a href="servicios.html">Servicio a Domicilio</a>
+            </div>
+            <div class="feature">
+                <h3>Historial Médico</h3>
+                <img src="img/imagen3.png" alt="Historial Médico">
+                <p>Accede al historial médico completo de tu mascota en cualquier momento.</p>
+                <a href="historial.html">Historial Médico</a>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq">
+                <h3>¿Cómo puedo programar una cita?</h3>
+                <p>Para programar una cita, dirígete a la sección de "Programación de Citas" y selecciona el veterinario y la fecha deseada. Luego, sigue las instrucciones para confirmar la cita.</p>
+            </div>
+            <div class="faq">
+                <h3>¿Qué servicios a domicilio ofrecen?</h3>
+                <p>Ofrecemos una variedad de servicios veterinarios a domicilio, incluyendo consultas generales, vacunaciones y procedimientos menores. Consulta con nuestro equipo para más detalles.</p>
+            </div>
+            <div class="faq">
+                <h3>¿Cómo puedo acceder al historial médico de mi mascota?</h3>
+                <p>Accede a la sección de "Historial Médico" desde el menú principal. Aquí podrás ver y descargar el historial médico completo de tu mascota.</p>
+            </div>
+            <div class="faq">
+                <h3>¿Qué hacer si tengo problemas con la plataforma?</h3>
+                <p>Si tienes algún problema con la plataforma, contacta con nuestro soporte técnico a través de la sección de "Contacto" en el sitio web. Estamos aquí para ayudarte.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pet&Care. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq h3').forEach(question => {
+            question.addEventListener('click', () => {
+                const faq = question.parentElement;
+                faq.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
