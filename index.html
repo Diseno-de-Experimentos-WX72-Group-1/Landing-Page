@@ -1,165 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pet&Care - Gestiona fácilmente las citas y el historial médico de tus mascotas. Servicios veterinarios eficientes y accesibles.">
-    <meta name="keywords" content="citas veterinarias, cuidado de mascotas, historial médico de mascotas, veterinarios, plataforma veterinaria">
-    <meta name="author" content="Pet&Care Team">
-    <title>Pet&Care - Plataforma de Gestión Veterinaria</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicativo de Citas Veterinarias</title>
+  <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="Imagen1.png" alt="Pet&Care Logo">
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="container">
+      <a href="#features" class="nav-link">Características</a>
+      <a href="#testimonials" class="nav-link">Testimonios</a>
+      <a href="#faq" class="nav-link">Preguntas Frecuentes</a>
+      <a href="#contact" class="nav-link">Contacto</a>
+    </div>
+</nav>
+  
+
+  <!-- Sección de Encabezado con CTA y Logo -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-logo">
+          <img src="assets/images/logo.png" alt="Logo del Aplicativo" class="logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#citas">Citas Disponibles</a></li>
-                <li><a href="#faq">Preguntas Frecuentes</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
-                <li><a href="#usuarios">Usuarios</a></li>
-                <li><a href="#contact">Contáctanos</a></li>
-                <li><a href="#login">Iniciar Sesión</a></li>
-                <li><a href="#registro">Registro</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Pet&Care - Plataforma de Gestión Veterinaria</h1>
-            <p>Gestiona fácilmente las citas y el historial médico de tus mascotas. Servicios veterinarios eficientes y accesibles.</p>
-            <a href="#citas" class="btn btn-primary">Agendar Cita</a>
+        <div class="header-text">
+          <h1>Gestiona las citas veterinarias con facilidad</h1>
+          <p>Reserva citas para visitas en clínica o a domicilio con veterinarios de confianza.</p>
+          <button class="cta-btn">Regístrate</button>
         </div>
-    </section>
-
-    <!-- Nosotros Section -->
-    <section id="nosotros" class="section">
-        <h2>Nosotros</h2>
-        <div class="content">
-            <img src="images (2).jpg" alt="Nosotros">
-            <div class="mission">
-                <h3><b>Misión</h3></b>
-                <p>Nuestra misión es facilitar el cuidado y la atención veterinaria de tus mascotas, brindando una plataforma eficiente y accesible.
-                    Nuestra misión es proporcionar soluciones innovadoras y de alta calidad que superen las expectativas de nuestros clientes. Nos comprometemos a ofrecer un servicio excepcional, impulsado por la pasión y la excelencia, para contribuir al éxito y crecimiento de cada uno de nuestros clientes."
-                </p>
-            </div>
-            <div class="vision">
-                <h3>Visión</h3>
-                <p>Ser la plataforma líder en la gestión veterinaria, ofreciendo soluciones innovadoras para el cuidado de las mascotas.
-                    Nuestra visión es ser líderes en nuestra industria, reconocidos por nuestra integridad, innovación y compromiso con la satisfacción del cliente. Buscamos establecer un estándar de excelencia y ser el socio preferido en el sector, creando un impacto positivo y duradero en la comunidad y en el mercado global."
-                </p>
-            
-            </div>
+        <div class="header-image">
+          <img src="assets/images/veterinarian-with-pet.webp" alt="Veterinario con mascota">
         </div>
-    </section>
+      </div>
+    </div>
+  </header>
 
-    <!-- Usuarios Section -->
-    <section id="usuarios" class="section">
-        <h2>Usuarios</h2>
-        <div class="user-types">
-            <div class="user-card">
-                <h3>Propietario de Mascotas</h3>
-                <p>Gestiona el historial médico y las citas de tu mascota con facilidad.</p>
-                <a href="#registro" class="btn btn-secondary">Seleccionar</a>
-            </div>
-            <div class="user-card">
-                <h3>Personal Veterinario</h3>
-                <p>Accede a los historiales médicos y gestiona citas para tus pacientes.</p>
-                <a href="#registro" class="btn btn-secondary">Seleccionar</a>
-            </div>
-            
+  <!-- Sección de Características -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2>¿Por qué elegir nuestra plataforma?</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <img src="assets/images/calendar-icon.jpg" alt="Icono de gestión de citas" class="feature-icon">
+          <h3>Gestiona tus Citas</h3>
+          <p>Configura tus horarios disponibles y ofrece citas tanto en clínica como a domicilio.</p>
         </div>
-        <img src="NOTA-DE-TAPA.jpg" alt="USUARIO 1" width="500" height="300">
-            <img src="ventajas-de-tener-una-mascota-para-los-ninos-wikiduca.jpg" alt="USUARIO 2" width="500" height="300">
-    </section>
-
-    <!-- Servicios Section -->
-    <section id="servicios" class="section">
-        <h2>Servicios</h2>
-        <ul class="services-list">
-            <p>
-                <img src="purina-consulta-veterinaria-para-mascotas-lo-que-debes-saber.jpg.webp" width="400" height="200" >
-             
-            </p>
-            <p>
-                <img src="Diseño sin título-Sep-15-2022-07-01-13-26-AM.webp" width="400" height="200" >
-            </p>
-            <li>
-                <p>SERVICIO 1: Cuidamos a sus mascotas con un servicio de citas medicas en las qque puede registar a su mascota.</p>
-            </li>
-            <li>
-                <p>SERVICIO 2: Vamos en casa en casa para continuar y seguir con el cuidado de sus mascotas.</p>
-            </li>
-        </ul>
-    </section>
-
-    <!-- Citas Disponibles Section -->
-    <section id="citas" class="section">
-        <h2>Citas Disponibles</h2>
-        <img src="animated-calendar-for-time-management-for-business-icon-clipart-vector.jpg" alt="Citas Disponibles">
-        <div id="calendar"></div>
-    </section>
-
-    <!-- Testimonios Section -->
-    <section id="testimonios" class="section">
-        <h2>Testimonios</h2>
-        <div class="testimonials">
-            <div class="testimonial">
-                <img src="71SoLVwcNgL._CR0,0,947,947_._FMjpg_.jpg" alt="Testimonio 1">
-                <p>"Desde que comencé a usar Pet&Care, la gestión de la salud de mi perro ha sido mucho más sencilla. Antes, me encontraba con montones de papeles y recordatorios en mi teléfono para las citas veterinarias, pero ahora todo está centralizado en una sola plataforma. La interfaz es extremadamente amigable y fácil de usar. La función de historial médico me permite tener acceso rápido a toda la información que necesito para cada visita al veterinario, desde vacunas hasta tratamientos previos."</p>
-                <p>" Además, el sistema de agendar citas es muy eficiente. Puedo ver rápidamente las fechas disponibles y elegir la que mejor se adapte a mi horario, sin tener que esperar en una llamada telefónica interminable. Lo que realmente me ha impresionado es la capacidad de recibir recordatorios automáticos, lo que asegura que nunca me olvide de una cita o de administrar una medicación a mi mascota.
-
-                    En general, Pet&Care ha hecho una gran diferencia en mi vida y en el bienestar de mi perro. La tranquilidad que me proporciona saber que toda la información médica de mi mascota está a mi alcance y que puedo gestionar las citas con facilidad es invaluable. Lo recomiendo a cualquier dueño de mascotas que busque una forma moderna y eficiente de cuidar de la salud de sus animales."</p>
-                <h4>- Ana García</h4>
-            </div>
-            <div class="testimonial">
-                <img src="juan.jpg" alt="Testimonio 2">
-                <p>"Como veterinario con más de 15 años de experiencia, he visto muchas herramientas para la gestión de clínicas, pero ninguna se compara con Pet&Care en términos de funcionalidad y facilidad de uso. Esta plataforma ha revolucionado la forma en que manejo mi práctica. La integración de los historiales médicos electrónicos con la capacidad de agendar citas en línea ha optimizado enormemente mi tiempo y el de mi equipo."</p>
-                <p>" Una de las características que más aprecio es la posibilidad de acceder a los historiales médicos de mis pacientes de forma rápida y segura. Todo está al alcance de un clic, lo que me permite revisar tratamientos anteriores y realizar un seguimiento más efectivo de cada caso. La plataforma también facilita la comunicación con los propietarios de las mascotas, permitiendo recordatorios automáticos y mensajes personalizados.
-
-                    Además, la interfaz intuitiva y el soporte técnico de Pet&Care son excepcionales. En más de una ocasión, el equipo de soporte ha sido rápido en resolver cualquier problema y en implementar mejoras que realmente hacen una diferencia en mi trabajo diario. Gracias a Pet&Care, puedo concentrarme más en el cuidado de los animales y menos en la gestión administrativa. Es una herramienta imprescindible para cualquier veterinario que quiera ofrecer un servicio de alta calidad y eficiente."</p>
-                <h4>- Dr. Carlos Pérez</h4>
-            </div>
+        <div class="feature-item">
+          <img src="assets/images/medical-history-icon.png" alt="Icono de historial médico" class="feature-icon">
+          <h3>Historial Médico de Mascotas</h3>
+          <p>Consulta y actualiza el historial médico completo de tus pacientes directamente en la app.</p>
         </div>
-    </section>
-
-    <!-- Preguntas Frecuentes Section -->
-    <section id="faq" class="section">
-        <h2>Preguntas Frecuentes</h2>
-        <div class="faq-item">
-            <h3>¿Cómo agendo una cita?</h3>
-            <p>Para agendar una cita, selecciona la opción "Agendar Cita" en el menú principal o desde la sección de historial médico de tu mascota.</p>
+        <div class="feature-item">
+          <img src="assets/images/statistics-icon.png" alt="Icono de estadísticas" class="feature-icon">
+          <h3>Estadísticas de Citas</h3>
+          <p>Realiza un seguimiento del número total de citas que has atendido desde que te registraste en la plataforma.</p>
         </div>
-        <div class="faq-item">
-            <h3>¿Puedo gestionar más de una mascota?</h3>
-            <p>Sí, puedes agregar varias mascotas a tu perfil y gestionar el historial médico de cada una de ellas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Testimonios -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2>Testimonios de nuestros usuarios</h2>
+      <div class="testimonial-list">
+        <div class="testimonial-item">
+          <img src="assets/images/testimonial-vet.jpg" alt="Veterinario satisfecho">
+          <p>"Gracias a esta plataforma, puedo gestionar fácilmente mis citas tanto en clínica como a domicilio. ¡Una gran ayuda para mi negocio!"</p>
+          <h4>Dr. Carlos Pérez</h4>
+          <span>Veterinario</span>
         </div>
-    </section>
+        <div class="testimonial-item">
+          <img src="assets/images/testimonial-owner.jpeg" alt="Propietaria de mascotas satisfecha">
+          <p>"La facilidad de reservar citas para mis mascotas desde mi teléfono me ha ahorrado mucho tiempo. Además, me encanta poder acceder al historial médico."</p>
+          <h4>Ana Gómez</h4>
+          <span>Dueña de Mascotas</span>
+        </div>
+        <div class="testimonial-item">
+          <img src="assets/images/testimonial-owner2.jpg" alt="Propietario de mascotas satisfecho">
+          <p>"La opción de citas a domicilio es perfecta para mis gatos, que se estresan en la clínica. Esta plataforma es simplemente genial."</p>
+          <h4>Juan Martínez</h4>
+          <span>Dueño de Mascotas</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>Contáctanos</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Nombre" required>
-            <input type="email" id="email" placeholder="Correo Electrónico" required>
-            <textarea id="message" placeholder="Mensaje" required></textarea>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-    </section>
+  <!-- FAQ Section -->
+<section id="faq" class="faq">
+    <div class="container">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="faq-item">
+        <h3>¿Cómo me registro como veterinario?</h3>
+        <p>Para registrarte como veterinario, haz clic en el botón "Regístrate como Veterinario" y completa el formulario con tus datos y horarios disponibles.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Puedo ofrecer servicios a domicilio?</h3>
+        <p>Sí, puedes configurar tus horarios para ofrecer servicios tanto en clínica como a domicilio al registrar tu perfil en la plataforma.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Cómo agendo una cita?</h3>
+        <p>Para agendar una cita, selecciona la opción "Agendar Cita" en el menú principal.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Puedo gestionar más de una mascota?</h3>
+        <p>Sí, puedes agregar varias mascotas a tu perfil y gestionar los datos de cada una de ellas.</p>
+      </div>
+    </div>
+  </section>  
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Pet&Care. Todos los derechos reservados.</p>
-    </footer>
+  <!-- Sección de Formulario de Contacto -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Ponte en contacto</h2>
+      <div class="contact-content">
+        <div class="contact-form">
+          <form id="contactForm">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
 
-    <script src="script.js"></script>
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Número de Teléfono</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit" class="cta-btn">Enviar</button>
+          </form>
+        </div>
+        <div class="contact-image">
+          <img src="assets/images/owner-with-pet.jpg" alt="Dueño con su mascota">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer con Logo -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="assets/images/logo.png" alt="Logo del Aplicativo" class="logo">
+      </div>
+      <p>&copy; 2024 Aplicativo de Citas Veterinarias. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="assets/scripts/script.js"></script>
 </body>
 </html>
